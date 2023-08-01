@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Weather API</title>
+   </head>
+   <body>
+      <form id = "city-form">
+        <input type = "text" placeholder = "Enter a City" id = "city-input"/>
+        <button type="submit">Submit</button>
+      </form>
+    <h1>City Name: <span id="city-name"></span></h1>
+      <h3>Weather Conditions</h3>
+      <div id="weather-conditions">
+        <img id = "weatherIcon" alt="weather icon"/>
+         <ul>
+            <li>Temperature K&deg: <span id ="temp"></span></li>
+            <li>Feels Like K&deg: <span id ="feelsLike"></span></li>
+            <li>Wind Speed: <span id ="windSpeed"></span></li>
+         </ul>
+        <script src = "script.js"></script>
+         <!-- TODO: dynamically add html about weather using data from API -->
+      </div>
+   </body>
+</html>
