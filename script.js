@@ -13,7 +13,7 @@ cityForm.addEventListener("submit", event => {
     search = cityInput.value
 
 
-fetch(`https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=${apiKey}`)
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=${apiKey}&units=metric`)
 .then(response => response.json())
 .then(data => {
     cityName.innerHTML = data.name;
